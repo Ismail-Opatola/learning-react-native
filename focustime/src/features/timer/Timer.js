@@ -72,7 +72,7 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
           onEnd={onEnd}
         />
       </View>
-      <View style={{ paddingTop: spacing.xxl }}>
+      <View style={{ paddingTop: spacing.xxl, flex: 1}}>
         <Text style={styles.title}>Focusing on:</Text>
         <Text style={styles.task}>{focusSubject}</Text>
         <View style={{ paddingTop: spacing.sm }}>
@@ -82,7 +82,7 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
             style={{ height: 10 }}
           />
         </View>
-        <View style={[styles.buttonWrapper, { marginTop: spacing.sm }]}>
+        <View style={[styles.buttonWrapper, {flex: 1, marginTop: spacing.sm, justifyContent: "space-evenly", flexWrap: "wrap" }]}>
           <Timing onChangeTime={handleChangeTime} />
         </View>
       </View>
@@ -109,12 +109,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   task: {
-    fontWeight: 'Bold',
+    fontWeight: 'bold',
     color: colors.white,
     textAlign: 'center',
   },
   countdown: {
-    flex: 0.5,
+    flex: 0.9,
     justifyContent: 'center',
     alignItems: 'center',
   },

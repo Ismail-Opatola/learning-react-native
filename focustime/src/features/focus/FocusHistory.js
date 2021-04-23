@@ -18,7 +18,7 @@ export const FocusHistory = ({ focusHistory, setFocusHistory, onClear }) => {
             <Text style={styles().title}>Things we've focused on</Text>
             <FlatList
               style={{ flex: 1 }}
-              contentContainerStyle={{ flex: 1, alignItems: 'center' }}
+              contentContainerStyle={{ flex: 1, alignItems: 'center'}}
               data={focusHistory}
               renderItem={HistoryItem}
             />
@@ -41,6 +41,11 @@ StyleSheet.create({
   historyItem: {
     color: status > 1 ? 'red' : 'green',
     fontSize: fontSizes.md,
+    padding: spacing.sm,
+    backgroundColor: "rgba(0,0,0,0.3)",
+    borderRadius: 8,
+    marginTop: spacing.sm,
+    marginBottom: spacing.sm,
   },
   title: {
     color: 'white',

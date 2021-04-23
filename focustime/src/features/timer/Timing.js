@@ -6,13 +6,31 @@ export const Timing = ({ onChangeTime }) => {
   return (
     <>
       <View styles={styles.timingButton}>
-        <RoundedButton size={75} title="10" onPress={() => onChangeTime(10)} />
+        <RoundedButton size={60} title="10" onPress={() => onChangeTime(10)} />
       </View>
       <View styles={styles.timingButton}>
-        <RoundedButton size={75} title="15" onPress={() => onChangeTime(15)} />
+        <RoundedButton size={60} title="15" onPress={() => onChangeTime(15)} />
       </View>
       <View styles={styles.timingButton}>
-        <RoundedButton size={75} title="20" onPress={() => onChangeTime(20)} />
+        <RoundedButton size={60} title="20" onPress={() => onChangeTime(20)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="25" onPress={() => onChangeTime(25)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="30" onPress={() => onChangeTime(30)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="35" onPress={() => onChangeTime(35)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="40" onPress={() => onChangeTime(40)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="45" onPress={() => onChangeTime(45)} />
+      </View>
+      <View styles={styles.timingButton}>
+        <RoundedButton size={60} title="50" onPress={() => onChangeTime(50)} />
       </View>
     </>
   );

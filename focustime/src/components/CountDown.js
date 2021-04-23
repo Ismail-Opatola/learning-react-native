@@ -77,7 +77,7 @@ export const CountDown = ({ minutes, isPaused, onProgress, onEnd }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: fontSizes.xxxl,
-    fontWeight: 'Bold',
+    fontWeight: 'bold',
     padding: spacing.lg,
     color: colors.white,
     backgroundColor: 'rgba(94, 132, 226, 0.3)',
